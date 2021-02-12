@@ -1,0 +1,21 @@
+[submodule "plugins/start/vim-ipython-cell"]
+	path = plugins/start/vim-ipython-cell
+	url = https://github.com/hanschen/vim-ipython-cell
+[submodule "plugins/opt/vim-julia-cell"]
+	path = plugins/opt/vim-julia-cell
+	url = https://github.com/mroavi/vim-julia-cell
+[submodule "plugins/start/YouCompleteMe"]
+	path = plugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
+[submodule "plugins/start/julia-vim"]
+	path = plugins/start/julia-vim
+	url = https://github.com/JuliaEditorSupport/julia-vim
+[submodule "plugins/start/vim-slime"]
+	path = plugins/start/vim-slime
+	url = https://github.com/jpalardy/vim-slime
+[submodule "plugins/start/zepl"]
+	path = plugins/start/zepl
+	url = https://github.com/axvr/zepl.vim
+[submodule "plugins/start/UltiSnips"]
+	path = plugins/start/UltiSnips
+	url = https://github.com/sirver/UltiSnips
