@@ -1,0 +1,6 @@
+[submodule "pack/plugins/julia-vim"]
+	path = pack/plugins/julia-vim
+	url = https://github.com/JuliaEditorSupport/julia-vim
+[submodule "pack/plugins/start/julia-vim"]
+	path = pack/plugins/start/julia-vim
+	url = https://github.com/JuliaEditorSupport/julia-vim
