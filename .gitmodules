@@ -4,3 +4,6 @@
 [submodule "pack/plugins/start/julia-vim"]
 	path = pack/plugins/start/julia-vim
 	url = https://github.com/JuliaEditorSupport/julia-vim
+[submodule "pack/plugins/start/vimtex"]
+	path = pack/plugins/start/vimtex
+	url = github:lervag/vimtex
