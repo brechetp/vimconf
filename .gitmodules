@@ -43,3 +43,6 @@
 [submodule "plugins/start/python-mode"]
 	path = plugins/start/python-mode
 	url = https://github.com/python-mode/python-mode
+[submodule "plugins/start/tabular"]
+	path = plugins/start/tabular
+	url = https://github.com/godlygeek/tabular
