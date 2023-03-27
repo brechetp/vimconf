@@ -40,3 +40,6 @@
 [submodule "plugins/start/unicode.vim"]
 	path = plugins/start/unicode.vim
 	url = https://github.com/chrisbra/unicode.vim
+[submodule "plugins/start/vim-markdown"]
+	path = plugins/start/vim-markdown
+	url = https://github.com/preservim/vim-markdown
