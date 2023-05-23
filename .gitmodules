@@ -1,0 +1,39 @@
+[submodule "plugin/start/julia-vim"]
+	path = plugin/start/julia-vim
+	url = https://github.com/JuliaEditorSupport/julia-vim
+[submodule "plugin/start/vim-ipython-cell"]
+	path = plugin/start/vim-ipython-cell
+	url = https://github.com/hanschen/vim-ipython-cell
+[submodule "plugin/start/vim-slime"]
+	path = plugin/start/vim-slime
+	url = https://github.com/jpalardy/vim-slime
+[submodule "plugin/start/vimtex"]
+	path = plugin/start/vimtex
+	url = https://github.com/lervag/vimtex
+[submodule "plugin/start/ultisnips"]
+	path = plugin/start/ultisnips
+	url = https://github.com/sirver/UltiSnips
+[submodule "plugin/start/supertab"]
+	path = plugin/start/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "plugin/start/YouCompleteMe"]
+	path = plugin/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
+[submodule "plugin/start/nerdtree"]
+	path = plugin/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "plugin/start/ctrlp"]
+	path = plugin/start/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "plugin/start/vim-searchhi"]
+	path = plugin/start/vim-searchhi
+	url = https://github.com/qxxxb/vim-searchhi
+[submodule "plugin/start/fzf"]
+	path = plugin/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "plugin/start/fzf.vim"]
+	path = plugin/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "plugin/start/spotdiff.vim"]
+	path = plugin/start/spotdiff.vim
+	url = https://github.com/rickhowe/spotdiff.vim
