@@ -1,48 +1,42 @@
-[submodule "plugins/start/vim-ipython-cell"]
-	path = plugins/start/vim-ipython-cell
-	url = https://github.com/hanschen/vim-ipython-cell
-[submodule "plugins/opt/vim-julia-cell"]
-	path = plugins/opt/vim-julia-cell
-	url = https://github.com/mroavi/vim-julia-cell
-[submodule "plugins/start/YouCompleteMe"]
-	path = plugins/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe
-[submodule "plugins/start/julia-vim"]
-	path = plugins/start/julia-vim
+[submodule "plugin/start/julia-vim"]
+	path = plugin/start/julia-vim
 	url = https://github.com/JuliaEditorSupport/julia-vim
-[submodule "plugins/start/vim-slime"]
-	path = plugins/start/vim-slime
+[submodule "plugin/start/vim-ipython-cell"]
+	path = plugin/start/vim-ipython-cell
+	url = https://github.com/hanschen/vim-ipython-cell
+[submodule "plugin/start/vim-slime"]
+	path = plugin/start/vim-slime
 	url = https://github.com/jpalardy/vim-slime
-[submodule "plugins/start/zepl"]
-	path = plugins/start/zepl
-	url = https://github.com/axvr/zepl.vim
-[submodule "plugins/start/UltiSnips"]
-	path = plugins/start/UltiSnips
-	url = https://github.com/sirver/UltiSnips
-[submodule "plugins/start/vimtex"]
-	path = plugins/start/vimtex
+[submodule "plugin/start/vimtex"]
+	path = plugin/start/vimtex
 	url = https://github.com/lervag/vimtex
-[submodule "plugins/start/supertab"]
-	path = plugins/start/supertab
+[submodule "plugin/start/ultisnips"]
+	path = plugin/start/ultisnips
+	url = https://github.com/sirver/UltiSnips
+[submodule "plugin/start/supertab"]
+	path = plugin/start/supertab
 	url = https://github.com/ervandew/supertab
-[submodule "plugins/start/vim-titlecase"]
-	path = plugins/start/vim-titlecase
-	url = https://github.com/christoomey/vim-titlecase
-[submodule "plugins/start/vim-fugitive"]
-	path = plugins/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
-[submodule "plugins/start/ctrlp"]
-	path = plugins/start/ctrlp
+[submodule "plugin/start/YouCompleteMe"]
+	path = plugin/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
+[submodule "plugin/start/nerdtree"]
+	path = plugin/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "plugin/start/ctrlp"]
+	path = plugin/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "plugins/start/unicode.vim"]
-	path = plugins/start/unicode.vim
-	url = https://github.com/chrisbra/unicode.vim
-[submodule "plugins/start/vim-markdown"]
-	path = plugins/start/vim-markdown
-	url = https://github.com/preservim/vim-markdown
-[submodule "plugins/start/python-mode"]
-	path = plugins/start/python-mode
-	url = https://github.com/python-mode/python-mode
-[submodule "plugins/start/tabular"]
-	path = plugins/start/tabular
-	url = https://github.com/godlygeek/tabular
+[submodule "plugin/start/vim-searchhi"]
+	path = plugin/start/vim-searchhi
+	url = https://github.com/qxxxb/vim-searchhi
+[submodule "plugin/start/fzf"]
+	path = plugin/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "plugin/start/fzf.vim"]
+	path = plugin/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "plugin/start/spotdiff.vim"]
+	path = plugin/start/spotdiff.vim
+	url = https://github.com/rickhowe/spotdiff.vim
+[submodule "plugin/start/vim-dirdiff"]
+	path = plugin/start/vim-dirdiff
+	url = https://github.com/will133/vim-dirdiff
