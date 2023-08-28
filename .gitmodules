@@ -37,3 +37,6 @@
 [submodule "plugin/start/spotdiff.vim"]
 	path = plugin/start/spotdiff.vim
 	url = https://github.com/rickhowe/spotdiff.vim
+[submodule "plugin/start/vim-dirdiff"]
+	path = plugin/start/vim-dirdiff
+	url = https://github.com/will133/vim-dirdiff
