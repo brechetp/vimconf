@@ -40,3 +40,6 @@
 [submodule "plugin/start/vim-dirdiff"]
 	path = plugin/start/vim-dirdiff
 	url = https://github.com/will133/vim-dirdiff
+[submodule "plugins/start/nerdcommenter"]
+	path = plugins/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter
