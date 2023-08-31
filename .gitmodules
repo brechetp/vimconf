@@ -11,7 +11,7 @@
 	path = plugins/start/vimtex
 	url = https://github.com/lervag/vimtex
 [submodule "plugins/start/ultisnips"]
-	path = plugins/start/ultisnips
+	path = plugins/start/UltiSnips
 	url = https://github.com/sirver/UltiSnips
 [submodule "plugins/start/supertab"]
 	path = plugins/start/supertab
