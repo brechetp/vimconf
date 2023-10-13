@@ -16,9 +16,6 @@
 [submodule "plugins/start/supertab"]
 	path = plugins/start/supertab
 	url = https://github.com/ervandew/supertab
-[submodule "plugins/start/YouCompleteMe"]
-	path = plugins/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe
 [submodule "plugins/start/nerdtree"]
 	path = plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree
@@ -46,3 +43,9 @@
 [submodule "plugins/start/python-mode"]
 	path = plugins/start/python-mode
 	url = https://github.com/python-mode/python-mode
+[submodule "plugins/start/vim-fugitive"]
+	path = plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "plugins/start/vim-surround"]
+	path = plugins/start/vim-surround
+	url = https://github.com/tpope/vim-surround
