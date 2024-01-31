@@ -49,3 +49,12 @@
 [submodule "plugins/start/vim-surround"]
 	path = plugins/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "plugins/start/vim-markdown"]
+	path = plugins/start/vim-markdown
+	url = https://github.com/preservim/vim-markdown
+[submodule "plugins/start/rust.vim"]
+	path = plugins/start/rust.vim
+	url = https://github.com/rust-lang/rust.vim
+[submodule "plugins/start/thesaurus_query.vim"]
+	path = plugins/start/thesaurus_query.vim
+	url = https://github.com/Ron89/thesaurus_query.vim
