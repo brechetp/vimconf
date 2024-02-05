@@ -58,3 +58,6 @@
 [submodule "plugins/start/thesaurus_query.vim"]
 	path = plugins/start/thesaurus_query.vim
 	url = https://github.com/Ron89/thesaurus_query.vim
+[submodule "plugins/start/vim-tsv"]
+	path = plugins/start/vim-tsv
+	url = https://git.sr.ht/~sotirisp/vim-tsv
