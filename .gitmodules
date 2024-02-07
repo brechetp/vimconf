@@ -59,7 +59,7 @@
 	path = plugins/bck/vim-tsv
 	url = https://git.sr.ht/~sotirisp/vim-tsv
 [submodule "plugins/start/vimtex"]
-	path = plugins/start/vimtex
+	path = plugins/bck/vimtex
 	url = https://github.com/lervag/vimtex
 [submodule "plugins/start/YouCompleteMe"]
 	path = plugins/bck/YouCompleteMe
