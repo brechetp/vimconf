@@ -7,9 +7,6 @@
 [submodule "plugins/start/vim-slime"]
 	path = plugins/start/vim-slime
 	url = https://github.com/jpalardy/vim-slime
-[submodule "plugins/start/vimtex"]
-	path = plugins/start/vimtex
-	url = https://github.com/lervag/vimtex
 [submodule "plugins/start/ultisnips"]
 	path = plugins/start/UltiSnips
 	url = https://github.com/sirver/UltiSnips
