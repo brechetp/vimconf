@@ -58,3 +58,6 @@
 [submodule "plugins/start/vim-tsv"]
 	path = plugins/start/vim-tsv
 	url = https://git.sr.ht/~sotirisp/vim-tsv
+[submodule "plugins/start/vimtex"]
+	path = plugins/start/vimtex
+	url = https://github.com/lervag/vimtex
