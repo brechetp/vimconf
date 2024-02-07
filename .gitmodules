@@ -61,3 +61,6 @@
 [submodule "plugins/start/vimtex"]
 	path = plugins/start/vimtex
 	url = https://github.com/lervag/vimtex
+[submodule "plugins/start/YouCompleteMe"]
+	path = plugins/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
