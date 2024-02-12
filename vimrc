@@ -128,13 +128,15 @@ let g:vimtex_toc_config = {
 " slow latex fix? from =https://stackoverflow.com/questions/8300982/vim-running-slow-with-latex-files#975314
 "au FileType tex setlocal nocursorline
 "au FileType tex :NoMatchParen 
-let g:tex_flavor = "latex"
 " disable automatic fold
 "let g:vimtex_fold_automatic=0 
 "qpdfviewer plugin for forward search 
+" see https://blazeva1.pages.fit/post/2022/synctex/ 
 let g:vimtex_view_general_viewer = 'okular' 
 " forward search
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+let g:tex_flavor = "latex"
+
 let g:vimtex_fold_manual=1
 let g:vimtex_compiler_latexmk = {
             \ 'aux_dir' : '',
@@ -365,3 +367,9 @@ autocmd InsertLeave * execute 'normal! mI'
 " markdown
 "
 let g:vim_markdown_folding_disabled = 0
+
+" starts vim with the server enabled
+" :help vimtex-clientserver
+if empty(v:servername) && exists('*remote_startserver')
+  call remote_startserver('VIM')
+endif
