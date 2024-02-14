@@ -57,6 +57,8 @@ set tabstop=8  "sets the width of tab character
 set tw=80  "textwrap 80 characters
 set spell  "spell check
 
+"make the spaces fold/unfold 
+nnoremap <space> za  
  "status line
 "set statusline+=%F " display current file path in status line
 "set statusline+=%=%(%p%%%) 
@@ -353,7 +355,7 @@ endif
 noremap <LEADER>a :e ~/.vim/clip.txt<CR>:%d<CR>"0P:w<CR>:bd<CR>:echo "copied clipboard to ~/.vim/clip.txt"<CR>
 
 " conceal highlighting off?
-highlight clear Conceal
+"highlight clear Conceal
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -373,3 +375,4 @@ let g:vim_markdown_folding_disabled = 0
 if empty(v:servername) && exists('*remote_startserver')
   call remote_startserver('VIM')
 endif
+
