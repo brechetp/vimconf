@@ -355,7 +355,7 @@ endif
 noremap <LEADER>a :e ~/.vim/clip.txt<CR>:%d<CR>"0P:w<CR>:bd<CR>:echo "copied clipboard to ~/.vim/clip.txt"<CR>
 
 " conceal highlighting off?
-"highlight clear Conceal
+highlight clear Conceal
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
