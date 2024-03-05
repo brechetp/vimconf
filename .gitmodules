@@ -70,3 +70,9 @@
 [submodule "plugins/start/tex-conceal.vim"]
 	path = plugins/start/tex-conceal.vim
 	url = https://github.com/KeitaNakamura/tex-conceal.vim
+[submodule "plugins/start/vim-tex-conceal"]
+	path = plugins/start/vim-tex-conceal
+	url = https://github.com/shiandy/vim-tex-conceal
+[submodule "plugins/start/latex-unicoder.vim"]
+	path = plugins/start/latex-unicoder.vim
+	url = https://github.com/joom/latex-unicoder.vim

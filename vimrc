@@ -360,9 +360,8 @@ highlight clear Conceal
 "set some conceal for markdown? See :help conceallevel
 set conceallevel=2  
 " change?
-set concealcursor=nc
+set concealcursor=
 
-let g:tex_conceal='abdmg'
 
 "toggle conceallevel
 nnoremap <Leader>c :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
