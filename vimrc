@@ -355,11 +355,17 @@ endif
 noremap <LEADER>a :e ~/.vim/clip.txt<CR>:%d<CR>"0P:w<CR>:bd<CR>:echo "copied clipboard to ~/.vim/clip.txt"<CR>
 
 " conceal highlighting off?
-" for indices in tex markdown
 highlight clear Conceal 
 
 "set some conceal for markdown? See :help conceallevel
 set conceallevel=2  
+" change?
+set concealcursor=nc
+
+let g:tex_conceal='abdmg'
+
+"toggle conceallevel
+nnoremap <Leader>c :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -374,6 +380,12 @@ autocmd InsertLeave * execute 'normal! mI'
 "
 let g:vim_markdown_folding_disabled = 0
 
+" handled by bullet.vim
+let g:vim_markdown_auto_insert_bullets = 0
+
+let g:vim_markdown_new_list_item_indent = 4
+
+" LaTeX math
 let g:vim_markdown_math = 1
 
 " starts vim with the server enabled
@@ -382,10 +394,4 @@ if empty(v:servername) && exists('*remote_startserver')
   call remote_startserver('VIM')
 endif
 
-" to disable math conceal with latex math syntax enabled
-"let g:tex_conceal = ""
-"let g:vim_markdown_math = 0
 
-
-" remove automatic bullets points, taken care of by bullets.vim?
-let g:vim_markdown_auto_insert_bullets = 0

@@ -67,3 +67,6 @@
 [submodule "plugins/start/bullets.vim"]
 	path = plugins/start/bullets.vim
 	url = https://github.com/bullets-vim/bullets.vim
+[submodule "plugins/start/tex-conceal.vim"]
+	path = plugins/start/tex-conceal.vim
+	url = https://github.com/KeitaNakamura/tex-conceal.vim

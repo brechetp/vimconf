@@ -41,3 +41,6 @@ Gaussians
 Frobenius
 regularizers
 SVD
+expressivity
+determinantal
+Łojasiewicz
