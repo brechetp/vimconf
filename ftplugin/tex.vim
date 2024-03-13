@@ -132,6 +132,7 @@ let g:vimtex_syntax_custom_cmds = [
             \ {'name': 'sZ', 'mathmode': 1, 'argstyle': 'boldital', 'concealchar': 'Z'},
             \ {'name': 'defeq', 'mathmode': 1, 'concealchar': '≔'},
             \ {'name': 'eqdef', 'mathmode': 1, 'concealchar': '≕'},
+            \ {'name': 'dif', 'mathmode': 1, 'concealchar': 'd'},
             \ ]
 
 
