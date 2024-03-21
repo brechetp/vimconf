@@ -75,7 +75,7 @@ set fileencoding=utf-8
 "set linebreak "to avoid wrapping in the middle of words
 
 "Search options
-"set ignorecase
+set ignorecase
 set smartcase
 set hlsearch
 set wrapscan

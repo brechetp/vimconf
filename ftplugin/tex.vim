@@ -150,4 +150,8 @@ let g:vimtex_syntax_custom_cmds_with_concealed_delims = [
           \ 'mathmode': 1,
           \ 'cchar_open': '‖',
           \ 'cchar_close': '‖'},
+          \ {'name': 'ang',
+          \ 'mathmode': 1,
+          \ 'cchar_open': '<',
+          \ 'cchar_close': '>'},
           \]
