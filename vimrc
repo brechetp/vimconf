@@ -393,4 +393,6 @@ if empty(v:servername) && exists('*remote_startserver')
   call remote_startserver('VIM')
 endif
 
-
+" persistent undo
+set undofile
+set undodir=~/.vim/undo

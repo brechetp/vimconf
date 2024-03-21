@@ -73,6 +73,6 @@
 [submodule "plugins/start/latex-unicoder.vim"]
 	path = plugins/start/latex-unicoder.vim
 	url = https://github.com/joom/latex-unicoder.vim
-[submodule "plugins/start/gundo.vim"]
-	path = plugins/start/gundo.vim
-	url = https://github.com/sjl/gundo.vim.git
+[submodule "plugins/undotree"]
+	path = plugins/start/undotree
+	url = https://github.com/mbbill/undotree
