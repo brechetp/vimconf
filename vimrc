@@ -393,6 +393,10 @@ if empty(v:servername) && exists('*remote_startserver')
   call remote_startserver('VIM')
 endif
 
+"undotree
+
+nnoremap <F5> :UndotreeToggle<CR>
+
 " persistent undo
 set undofile
 set undodir=~/.vim/undo
