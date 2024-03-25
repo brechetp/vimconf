@@ -73,3 +73,6 @@
 [submodule "plugins/start/latex-unicoder.vim"]
 	path = plugins/start/latex-unicoder.vim
 	url = https://github.com/joom/latex-unicoder.vim
+[submodule "plugins/start/vim-mundo"]
+	path = plugins/start/vim-mundo
+	url = https://github.com/simnalamburt/vim-mundo
