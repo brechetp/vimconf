@@ -366,12 +366,16 @@ autocmd BufReadPost *
 " jump back to the position where you left with `I
 autocmd InsertLeave * execute 'normal! mI'
 
+set conceallevel=2  
+set concealcursor=nc
 " markdown
 "
 let g:vim_markdown_folding_disabled = 0
 
 " handled by bullet.vim
-let g:vim_markdown_new_list_item_indent = 0
+let g:vim_markdown_auto_insert_bullets = 0
+" still indent the text
+let g:vim_markdown_new_list_item_indent = 4  
 
 " LaTeX math
 let g:vim_markdown_math = 1
