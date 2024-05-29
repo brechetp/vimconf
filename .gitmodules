@@ -67,3 +67,12 @@
 [submodule "plugins/start/bullets.vim"]
 	path = plugins/start/bullets.vim
 	url = https://github.com/bullets-vim/bullets.vim
+[submodule "plugins/start/tex-conceal.vim"]
+	path = plugins/start/tex-conceal.vim
+	url = https://github.com/KeitaNakamura/tex-conceal.vim
+[submodule "plugins/start/latex-unicoder.vim"]
+	path = plugins/start/latex-unicoder.vim
+	url = https://github.com/joom/latex-unicoder.vim
+[submodule "plugins/start/vim-mundo"]
+	path = plugins/start/vim-mundo
+	url = https://github.com/simnalamburt/vim-mundo

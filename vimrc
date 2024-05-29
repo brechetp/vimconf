@@ -75,7 +75,7 @@ set fileencoding=utf-8
 "set linebreak "to avoid wrapping in the middle of words
 
 "Search options
-"set ignorecase
+set ignorecase
 set smartcase
 set hlsearch
 set wrapscan
@@ -355,7 +355,16 @@ endif
 noremap <LEADER>a :e ~/.vim/clip.txt<CR>:%d<CR>"0P:w<CR>:bd<CR>:echo "copied clipboard to ~/.vim/clip.txt"<CR>
 
 " conceal highlighting off?
-highlight clear Conceal
+highlight clear Conceal 
+
+"set some conceal for markdown? See :help conceallevel
+set conceallevel=2  
+" change?
+set concealcursor=
+
+
+"toggle conceallevel
+nnoremap <Leader>c :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -377,6 +386,7 @@ let g:vim_markdown_auto_insert_bullets = 0
 " still indent the text
 let g:vim_markdown_new_list_item_indent = 4  
 
+
 " LaTeX math
 let g:vim_markdown_math = 1
 
@@ -386,4 +396,10 @@ if empty(v:servername) && exists('*remote_startserver')
   call remote_startserver('VIM')
 endif
 
+"undotree
 
+nnoremap <F5> :UndotreeToggle<CR>
+
+" persistent undo
+set undofile
+set undodir=~/.vim/undo
