@@ -1,3 +1,9 @@
+" starts vim with the server enabled
+" :help vimtex-clientserver
+if empty(v:servername) && exists('*remote_startserver')
+  call remote_startserver('VIM')
+endif
+
 let g:vimtex_syntax_custom_cmds = [
             \ {'name': 'rI', 'mathmode': 1, 'concealchar': 'I'},
             \ {'name': 'rF', 'mathmode': 1, 'concealchar': 'F'},

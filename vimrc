@@ -132,12 +132,33 @@ let g:vimtex_toc_config = {
 "au FileType tex :NoMatchParen 
 " disable automatic fold
 "let g:vimtex_fold_automatic=0 
-"qpdfviewer plugin for forward search 
+let g:tex_flavor = "latex"
 " see https://blazeva1.pages.fit/post/2022/synctex/ 
+let g:vimtex_view_method = 'general'
 let g:vimtex_view_general_viewer = 'okular' 
 " forward search
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
-let g:tex_flavor = "latex"
+" disable matchparen
+let g:vimtex_matchparen_enabled = 0
+
+let g:vimtex_indent_delims = {
+      \ 'open' : [],
+      \ 'close' : [],
+      \ 'close_indented' : 0,
+      \ 'include_modified_math' : 0,
+      \}
+
+let g:vimtex_indent_on_ampersands = 0
+
+let g:vimtex_indent_lists = [
+\ 'itemize',
+\ 'description',
+\ 'enumerate',
+\ 'thebibliography',
+\ 'ilist',
+\ 'state',
+\]
+
 
 let g:vimtex_fold_manual=1
 let g:vimtex_compiler_latexmk = {
@@ -208,13 +229,13 @@ let g:slime_dont_ask_default = 1
 "let g:ipython_cell_run_command = 'include("{filepath}")'
 "let g:ipython_cell_cell_command = 'include_string(Main, clipboard())'
 
-"------------------------------------------------------------------------------
+" ------------------------------------------------------------------------------
 " ipython-cell configuration
 "------------------------------------------------------------------------------
-
 " Keyboard mappings. <Leader> is \ (backslash) by default
+" from https://vimawesome.com/plugin/vim-ipython-cell
 
-map <Leader>s to start IPython
+" map <Leader>s to start IPython
 nnoremap <Leader>s :SlimeSend1 ipython --matplotlib<CR>
 
 " map <Leader>r to run script
@@ -255,6 +276,14 @@ nnoremap <Leader>d :SlimeSend1 %debug<CR>
 " map <Leader>q to exit debug mode or IPython
 nnoremap <Leader>q :SlimeSend1 exit<CR>
 
+" map <F9> and <F10> to insert a cell header tag above/below and enter insert mode
+nmap <F9> :IPythonCellInsertAbove<CR>a
+nmap <F10> :IPythonCellInsertBelow<CR>a
+
+" also make <F9> and <F10> work in insert mode
+imap <F9> <C-o>:IPythonCellInsertAbove<CR>
+imap <F10> <C-o>:IPythonCellInsertBelow<CR>
+
 
 " make YCM compatible with UltiSnips (using supertab)
 "
@@ -266,6 +295,13 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+
+" edit vimrc
+nnoremap <leader>rc :tabnew ~/.vimrc<CR>
+
+" UltiSnips mapping
+nnoremap <leader>es :UltiSnipsEdit<CR>
 
 " NERDTree mappings
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -364,7 +400,7 @@ set concealcursor=
 
 
 "toggle conceallevel
-nnoremap <Leader>c :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
+nnoremap <Leader>< :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -387,16 +423,12 @@ let g:vim_markdown_new_list_item_indent = 4
 " LaTeX math
 let g:vim_markdown_math = 1
 
-" starts vim with the server enabled
-" :help vimtex-clientserver
-if empty(v:servername) && exists('*remote_startserver')
-  call remote_startserver('VIM')
-endif
 
 "undotree
 
-nnoremap <F5> :UndotreeToggle<CR>
+nnoremap <leader>ut :UndotreeToggle<CR>
 
 " persistent undo
 set undofile
 set undodir=~/.vim/undo
+

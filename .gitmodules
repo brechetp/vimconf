@@ -62,7 +62,7 @@
 	path = plugins/start/vimtex
 	url = https://github.com/lervag/vimtex
 [submodule "plugins/start/YouCompleteMe"]
-	path = plugins/start/YouCompleteMe
+	path = plugins/bck/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe
 [submodule "plugins/start/bullets.vim"]
 	path = plugins/start/bullets.vim
@@ -76,3 +76,12 @@
 [submodule "plugins/start/vim-mundo"]
 	path = plugins/start/vim-mundo
 	url = https://github.com/simnalamburt/vim-mundo
+[submodule "plugins/start/undotree"]
+	path = plugins/start/undotree
+	url = https://github.com/mbbill/undotree
+[submodule "plugins/start/vim-gnupg"]
+	path = plugins/start/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg
+[submodule "plugins/start/vim-matchup"]
+	path = plugins/start/vim-matchup
+	url = https://github.com/andymass/vim-matchup
