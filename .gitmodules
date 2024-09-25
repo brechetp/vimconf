@@ -83,5 +83,5 @@
 	path = plugins/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
 [submodule "plugins/start/vim-matchup"]
-	path = plugins/start/vim-matchup
+	path = plugins/bck/vim-matchup
 	url = https://github.com/andymass/vim-matchup
