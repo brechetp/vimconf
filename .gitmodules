@@ -85,3 +85,6 @@
 [submodule "plugins/start/vim-matchup"]
 	path = plugins/bck/vim-matchup
 	url = https://github.com/andymass/vim-matchup
+[submodule "plugins/start/vim-easy-align"]
+	path = plugins/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align
