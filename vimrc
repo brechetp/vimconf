@@ -149,7 +149,11 @@ let g:vimtex_indent_delims = {
       \ 'include_modified_math' : 0,
       \}
 
-let g:vimtex_indent_on_ampersands = 0  # remove indenting on ampersands
+"removing indent on &
+let g:vimtex_indent_on_ampersands = 0  
+
+"fomatting
+let g:vimtex_format_enabled = 1
 
 let g:vimtex_indent_lists = [
 \ 'itemize',
