@@ -75,7 +75,7 @@ set fileencoding=utf-8
 "set linebreak "to avoid wrapping in the middle of words
 
 "Search options
-set ignorecase
+"set ignorecase
 set smartcase
 set hlsearch
 set wrapscan
@@ -132,38 +132,12 @@ let g:vimtex_toc_config = {
 "au FileType tex :NoMatchParen 
 " disable automatic fold
 "let g:vimtex_fold_automatic=0 
-let g:tex_flavor = "latex"
+"qpdfviewer plugin for forward search 
 " see https://blazeva1.pages.fit/post/2022/synctex/ 
-let g:vimtex_view_method = 'general'
 let g:vimtex_view_general_viewer = 'okular' 
 " forward search
 let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
-" en/disable matchparen
-let g:vimtex_matchparen_enabled = 1
-
-" options for indenting in vimtex
-let g:vimtex_indent_delims = {
-      \ 'open' : [],
-      \ 'close' : [],
-      \ 'close_indented' : 0,
-      \ 'include_modified_math' : 0,
-      \}
-
-"removing indent on &
-let g:vimtex_indent_on_ampersands = 0  
-
-"fomatting
-let g:vimtex_format_enabled = 1
-
-let g:vimtex_indent_lists = [
-\ 'itemize',
-\ 'description',
-\ 'enumerate',
-\ 'thebibliography',
-\ 'ilist',
-\ 'state',
-\]
-
+let g:tex_flavor = "latex"
 
 let g:vimtex_fold_manual=1
 let g:vimtex_compiler_latexmk = {
@@ -234,13 +208,13 @@ let g:slime_dont_ask_default = 1
 "let g:ipython_cell_run_command = 'include("{filepath}")'
 "let g:ipython_cell_cell_command = 'include_string(Main, clipboard())'
 
-" ------------------------------------------------------------------------------
+"------------------------------------------------------------------------------
 " ipython-cell configuration
 "------------------------------------------------------------------------------
-" Keyboard mappings. <Leader> is \ (backslash) by default
-" from https://vimawesome.com/plugin/vim-ipython-cell
 
-" map <Leader>s to start IPython
+" Keyboard mappings. <Leader> is \ (backslash) by default
+
+map <Leader>s to start IPython
 nnoremap <Leader>s :SlimeSend1 ipython --matplotlib<CR>
 
 " map <Leader>r to run script
@@ -281,14 +255,6 @@ nnoremap <Leader>d :SlimeSend1 %debug<CR>
 " map <Leader>q to exit debug mode or IPython
 nnoremap <Leader>q :SlimeSend1 exit<CR>
 
-" map <F9> and <F10> to insert a cell header tag above/below and enter insert mode
-nmap <F9> :IPythonCellInsertAbove<CR>a
-nmap <F10> :IPythonCellInsertBelow<CR>a
-
-" also make <F9> and <F10> work in insert mode
-imap <F9> <C-o>:IPythonCellInsertAbove<CR>
-imap <F10> <C-o>:IPythonCellInsertBelow<CR>
-
 
 " make YCM compatible with UltiSnips (using supertab)
 "
@@ -301,21 +267,12 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-
-" edit vimrc
-nnoremap <leader>rc :tabnew ~/.vimrc<CR>
-
-" UltiSnips mapping
-nnoremap <leader>es :UltiSnipsEdit<CR>
-
 " NERDTree mappings
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-" ignore filetypes
-let  NERDTreeIgnore = ['\.aux$', '\.pdf$']
 " NERDCommenter mappings
 " ,cs clashes with thesaurus
 "
@@ -398,16 +355,7 @@ endif
 noremap <LEADER>a :e ~/.vim/clip.txt<CR>:%d<CR>"0P:w<CR>:bd<CR>:echo "copied clipboard to ~/.vim/clip.txt"<CR>
 
 " conceal highlighting off?
-highlight clear Conceal 
-
-"set some conceal for markdown? See :help conceallevel
-set conceallevel=2  
-" change?
-set concealcursor=
-
-
-"toggle conceallevel
-nnoremap <Leader>< :let &cole=(&cole == 2) ? 0 : 2 <bar> echo 'conceallevel ' . &cole <CR>
+highlight clear Conceal
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
@@ -418,50 +366,24 @@ autocmd BufReadPost *
 " jump back to the position where you left with `I
 autocmd InsertLeave * execute 'normal! mI'
 
+set conceallevel=2  
+set concealcursor=nc
 " markdown
 "
 let g:vim_markdown_folding_disabled = 0
 
 " handled by bullet.vim
 let g:vim_markdown_auto_insert_bullets = 0
-
-let g:vim_markdown_new_list_item_indent = 4
+" still indent the text
+let g:vim_markdown_new_list_item_indent = 4  
 
 " LaTeX math
 let g:vim_markdown_math = 1
 
+" starts vim with the server enabled
+" :help vimtex-clientserver
+"if empty(v:servername) && exists('*remote_startserver')
+  "call remote_startserver('VIM')
+"endif
 
-"undotree
 
-nnoremap <leader>ut :UndotreeToggle<CR>
-
-" persistent undo
-set undofile
-set undodir=~/.vim/undo
-
-" Bullets.vim
-"let g:bullets_set_mappings = 0 " disable adding default key mappings, default = 1
-
-" default = []
-" N.B. You can set these mappings as-is without using this g:bullets_custom_mappings option but it
-" will apply in this case for all file types while when using g:bullets_custom_mappings it would
-" take into account file types filter set in g:bullets_enabled_file_types, and also
-" g:bullets_enable_in_empty_buffers option.
-"let g:bullets_custom_mappings = [
-  "\ ['imap', '<cr>', '<Plug>(bullets-newline)'],
-  "\ ['inoremap', '<C-cr>', '<cr>'],
-  "\
-  "\ ['nmap', 'o', '<Plug>(bullets-newline)'],
-  "\
-  "\ ['vmap', 'gN', '<Plug>(bullets-renumber)'],
-  "\ ['nmap', 'gN', '<Plug>(bullets-renumber)'],
-  "\
-  "\ ['nmap', '<leader>x', '<Plug>(bullets-toggle-checkbox)'],
-  "\
-  "\ ['imap', '<C-t>', '<Plug>(bullets-demote)'],
-  "\ ['nmap', '>>', '<Plug>(bullets-demote)'],
-  "\ ['vmap', '>', '<Plug>(bullets-demote)'],
-  "\ ['imap', '<C-d>', '<Plug>(bullets-promote)'],
-  "\ ['nmap', '<<', '<Plug>(bullets-promote)'],
-  "\ ['vmap', '<', '<Plug>(bullets-promote)'],
-  "\ ]
