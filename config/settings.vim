@@ -1,5 +1,9 @@
 "vim: filtype=vimrc
 
+" allow for alias expansion within vim
+" https://stackoverflow.com/questions/4642822/how-to-make-bashrc-aliases-available-within-a-vim-shell-command
+let $BASH_ENV = "~/.bash_aliases"  
+
 colorscheme sourcerer
 
 filetype plugin indent on  
