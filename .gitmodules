@@ -88,3 +88,6 @@
 [submodule "plugins/start/vim-easy-align"]
 	path = plugins/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
+[submodule "plugins/start/UltiSnips"]
+	path = plugins/start/UltiSnips
+	url = https://github.com/SirVer/ultisnips
