@@ -8,8 +8,8 @@
 	path = plugins/start/vim-slime
 	url = https://github.com/jpalardy/vim-slime
 [submodule "plugins/start/ultisnips"]
-	path = plugins/bck/UltiSnips
-	url = https://github.com/sirver/UltiSnips
+	path = plugins/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
 [submodule "plugins/start/supertab"]
 	path = plugins/start/supertab
 	url = https://github.com/ervandew/supertab
