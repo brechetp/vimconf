@@ -62,7 +62,7 @@
 	path = plugins/start/vimtex
 	url = https://github.com/lervag/vimtex
 [submodule "plugins/start/YouCompleteMe"]
-	path = plugins/bck/YouCompleteMe
+	path = plugins/start/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe
 [submodule "plugins/start/bullets.vim"]
 	path = plugins/start/bullets.vim
