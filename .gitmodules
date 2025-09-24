@@ -2,13 +2,13 @@
 	path = plugins/start/julia-vim
 	url = https://github.com/JuliaEditorSupport/julia-vim
 [submodule "plugins/start/vim-ipython-cell"]
-	path = plugins/start/vim-ipython-cell
+	path = plugins/opt/vim-ipython-cell
 	url = https://github.com/hanschen/vim-ipython-cell
 [submodule "plugins/start/vim-slime"]
 	path = plugins/start/vim-slime
 	url = https://github.com/jpalardy/vim-slime
 [submodule "plugins/start/ultisnips"]
-	path = plugins/start/ultisnips
+	path = plugins/bck/ultisnips
 	url = https://github.com/SirVer/ultisnips
 [submodule "plugins/start/supertab"]
 	path = plugins/start/supertab
@@ -38,7 +38,7 @@
 	path = plugins/start/nerdcommenter
 	url = https://github.com/preservim/nerdcommenter
 [submodule "plugins/start/python-mode"]
-	path = plugins/start/python-mode
+	path = plugins/opt/python-mode
 	url = https://github.com/python-mode/python-mode
 [submodule "plugins/start/vim-fugitive"]
 	path = plugins/start/vim-fugitive
@@ -62,7 +62,7 @@
 	path = plugins/start/vimtex
 	url = https://github.com/lervag/vimtex
 [submodule "plugins/start/YouCompleteMe"]
-	path = plugins/start/YouCompleteMe
+	path = plugins/bck/YouCompleteMe
 	url = https://github.com/ycm-core/YouCompleteMe
 [submodule "plugins/start/bullets.vim"]
 	path = plugins/start/bullets.vim
@@ -91,3 +91,6 @@
 [submodule "plugins/start/UltiSnips"]
 	path = plugins/start/UltiSnips
 	url = https://github.com/SirVer/ultisnips
+[submodule "plugins/start/vim-polylgot"]
+	path = plugins/start/vim-polylgot
+	url = https://github.com/sheerun/vim-polyglot
